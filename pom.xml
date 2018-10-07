@@ -39,11 +39,11 @@
 			<distributionManagement>
 			
 			<!-- Publish the versioned releases here -->
-				<repository>
-					<id>nexus-user</id>
-					<name>nexus-user</name>
-					<url>http://192.168.32.40:8081/repository/maven-repo-release/</url>
-				</repository>
+<!-- 				<repository> -->
+<!-- 					<id>nexus-user</id> -->
+<!-- 					<name>nexus-user</name> -->
+<!-- 					<url>http://192.168.32.40:8081/repository/maven-repo-release/</url> -->
+<!-- 				</repository> -->
 				
 				<!-- Publish the version releases here -->
 				<snapshotRepository>
@@ -61,9 +61,9 @@
 			<id>maven-public</id>
 			<name>user</name>
 			<url>http://192.168.32.40:8081/repository/maven-public/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
+<!-- 			<releases> -->
+<!-- 				<enabled>true</enabled> -->
+<!-- 			</releases> -->
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
