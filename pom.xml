@@ -41,15 +41,15 @@
 			<!-- Publish the versioned releases here -->
 				<repository>
 					<id>nexus</id>
-					<name>maven-repo-release</name>
-					<url>http://192.168.32.40:8081/repository/maven-repo-release/</url>
+					<name>maven-releases</name>
+					<url>http://192.168.32.40:8081/repository/maven-releases/</url>
 				</repository>
 				
 				<!-- Publish the version releases here -->
 				<snapshotRepository>
 					<id>nexus</id>
-					<name>maven-repo-snapshot</name>
-					<url>http://192.168.32.40:8081/repository/maven-repo-snapshot/</url>
+					<name>maven-snapshots</name>
+					<url>http://192.168.32.40:8081/repository/maven-snapshots/</url>
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
