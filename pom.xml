@@ -32,20 +32,20 @@
 			<version>1.2</version>
 		</dependency>
 	</dependencies>
-	
+<!-- 
 	<profiles>
 		<profile>
 			<id>nexus-deploy</id>
 			<distributionManagement>
 			
-			<!-- Publish the versioned releases here -->
+			  Publish the versioned releases here
 				<repository>
 					<id>nexus</id>
 					<name>maven-releases</name>
 					<url>http://192.168.32.40:8081/repository/maven-releases/</url>
 				</repository>
 				
-				<!-- Publish the version releases here -->
+				Publish the version releases here 
 				<snapshotRepository>
 					<id>nexus</id>
 					<name>maven-snapshots</name>
@@ -54,8 +54,20 @@
 			</distributionManagement>
 		</profile>
 	</profiles>
-	
+	-->
 	<build>
 		<finalName>SFapp</finalName>
+		<plugins>
+			<plugin>
+			    <groupId>org.apache.tomcat.maven</groupId>
+			    <artifactId>tomcat7-maven-plugin</artifactId>
+			    <version>2.2</version>
+			    <configuration>
+			        <url>http://192.168.32.5:8080/manager/text</url>
+			        <server>Tomcat</server>
+			        <path>/SFapp</path>
+			    </configuration>
+		</plugin>
+		</plugins>
 	</build>
 </project>
